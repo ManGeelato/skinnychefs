@@ -9,8 +9,8 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="Restaurant/favicon.ico" rel="icon" />
-    <link href="Restaurant/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="Restaurant/favicon.ico" rel="icon" style="border-radius: 2px;" />
+    <link href="Restaurant/apple-touch-icon.png" rel="apple-touch-icon" style="border-radius: 2px;" />
 
     <!-- Google Fonts -->
     <link
@@ -80,7 +80,7 @@
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#menu">Restaurant</a></li>
-            <li><a class="nav-link scrollto" href="#events">Catering</a></li>
+            <li><a class="nav-link scrollto" href="#catering">Catering</a></li>
             <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
             <li><a class="nav-link scrollto" href="#contact">Location</a></li>
           </ul>
@@ -131,6 +131,10 @@
                       class="btn-book animate__animated animate__fadeInUp scrollto"
                       >Order Now</a
                     >
+                    <a
+                    href="#ourChef"
+                    class="btn-book animate__animated animate__fadeInUp scrollto"
+                    >Our Chef</a>
                   </div>
                 </div>
               </div>
@@ -164,6 +168,10 @@
                       class="btn-book animate__animated animate__fadeInUp scrollto"
                       >Order Now</a
                     >
+                    <a
+                    href="#ourChef"
+                    class="btn-book animate__animated animate__fadeInUp scrollto"
+                    >Our Chef</a>
                   </div>
                 </div>
               </div>
@@ -191,8 +199,11 @@
                     <a
                     href="https://wa.me/+27630668806"
                     class="btn-book animate__animated animate__fadeInUp scrollto"
-                    >Order Now</a
-                  >
+                    >Order Now</a>
+                    <a
+                    href="#ourChef"
+                    class="btn-book animate__animated animate__fadeInUp scrollto"
+                    >Our Chef</a>
                   </div>
                 </div>
               </div>
@@ -219,8 +230,11 @@
                   <a
                     href="https://wa.me/+27630668806"
                     class="btn-book animate__animated animate__fadeInUp scrollto"
-                    >Order Now</a
-                  >
+                  >Order Now</a>
+                  <a
+                  href="#ourChef"
+                  class="btn-book animate__animated animate__fadeInUp scrollto"
+                  >Our Chef</a>
                 </div>
               </div>
             </div>
@@ -271,7 +285,6 @@
                 src="assets/video/skinnyChefs.mp4"
               ></video>
             </div>
-
             <div
               class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch"
             >
@@ -315,11 +328,11 @@
 
       <!-- start menu Section -->
 
-      <!-- <section id="menu" class="menu section-bg">
+     <section id="menu" class="menu section-bg">
         <div class="container max-width-container" data-aos="fade-up">
           <div class="section-title">
             <h2>Menu</h2>
-            <p>Check Our Tasty Menu</p>
+            <p>Our Tasty Dishes</p>
           </div>
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -328,7 +341,8 @@
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-drinks">Drinks</li>
                 <li data-filter=".filter-salads">Salads</li>
-                <li data-filter=".filter-specialty">Specialty</li>
+                <li data-filter=".filter-specialty">Sushi & Specialties</li>
+                <li data-filter=".filter-catering">Platters</li>
               </ul>
             </div>
           </div>
@@ -340,262 +354,417 @@
           >
             <div class="col-lg-6 menu-item filter-drinks">
               <img
-                src="assets/img/menu/schweppes-tonic.jpg"
+                src="Restaurant/aloeDrink.jpg"
                 class="menu-img"
                 alt=""
+                style="transform: scale(1.3); cursor: pointer;"
               />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#"> Schweppes Tonic</a><span>5.0 dt</span>
+                  <a href="#">Blueberry Aloe Vera</a><span>Drink</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 menu-item filter-specialty">
-              <img
-                src="assets/img/menu/cleopatra.jfif"
-                class="menu-img"
-                alt=""
-              />
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/allYouCanEatMix.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Cleopatra</a><span>32.0 dt</span>
+                  <a href="#">All you can eat</a><span>Catering</span>
                 </div>
                 <div class="menu-ingredients">
-                  Fillet Of Sea Bream On A Bed Of Prawns, Shrimps, Mushrooms,
-                  Basil Leaves, Zucchinis
+                  All you can eat food mix
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/beefRibsAndChicken.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Ribs and Drumsticks</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  BBQ Ribs and drumsticks platter
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/biltonPlatter.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Fruit Buffet</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Biltong, Dry wors, fresh Hand-picked grapes
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-drinks">
-              <img src="assets/img/menu/juice.jpeg" class="menu-img" alt="" />
+              <img
+                src="Restaurant/aloeVeraWhite.jpg"
+                class="menu-img"
+                alt=""
+                style="transform: scale(1.3); cursor: pointer;"
+              />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Fresh Orange Juice</a><span>7.0 dt</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-salads">
-              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
-              <div class="menu-item-details">
-                <div class="menu-content">
-                  <a href="#">Caesar Salad</a>
-                  <span>24.0 dt</span>
-                </div>
-                <div class="menu-ingredients">
-                  Heart of Lettuce, Cherry Tomatoes, Grilled Chicken, Parmesan.
+                  <a href="#">Litch Aloe Vera</a><span>Drink</span>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-specialty">
-              <img src="assets/img/menu/beffy.jpg" class="menu-img" alt="" />
+              <img src="Restaurant/prawnWrap.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Beffy</a><span>24.0 dt</span>
+                  <a href="#">Prawn Wrap</a><span>Specialty</span>
                 </div>
                 <div class="menu-ingredients">
-                  Tomato Sauce, Ground Meat, Garlic, Chili Flakes, Parsley.
+                  Hand-picked prawns, fresh herbs
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/desertMix.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Desert Mix</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Cookies, Cakes, Fresh cream garnish
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/prawnWrap.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Starter Wrap</a><span>Specialty</span>
+                </div>
+                <div class="menu-ingredients">
+                  Stuffed rows, freshly cut onions, dip
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-drinks">
-              <img src="assets/img/menu/mojito.jpg" class="menu-img" alt="" />
+              <img
+                src="Restaurant/aloePomergranate.jpg"
+                class="menu-img"
+                alt=""
+                style="transform: scale(1.3); cursor: pointer;"
+              />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Mojito</a><span>8.0 dt</span>
+                  <a href="#">Aloe Pomegranate</a><span>Drink</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/koreanBBQwings.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Korean BBQ Wings</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Korean style BBQ Wings, diced cucumbers
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/sushiAndAvo.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Sushi and Avocado</a><span>Sushi</span>
+                </div>
+                <div class="menu-ingredients">
+                  Sushi slices, diced cucumbers, avocado
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-salads">
+              <img src="Restaurant/cucumberSushi.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Salmon And Cucumber</a>
+                  <span>Salad</span>
+                </div>
+                <div class="menu-ingredients">
+                  Freshly diced cucumber with salmon.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/fingerPicks.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Snack Mix</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Diced cheese, grapes, biscuits, strawberries, dip
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/prawnMix.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Prawn Mix</a><span>Specialty</span>
+                </div>
+                <div class="menu-ingredients">
+                  Hand-picked prawns, mixed vegetables and herbs.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-drinks">
+              <img
+                src="Restaurant/aloeVera.jpg"
+                class="menu-img"
+                alt=""
+                style="transform: scale(1.3); cursor: pointer;"
+              />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Mango Aloe Vera</a><span>Drink</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/prawnWrap.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Prawn Wrap</a><span>Specialty</span>
+                </div>
+                <div class="menu-ingredients">
+                  Hand-picked prawns, fresh herbs
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/meatSticks.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Breakfast Buffet</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Assorted croissants, muffins, assorted sandwiches, BBQ meat sticks, boerewors rolls, wraps
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/meatyPlatter.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Chicken Wraps</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Chicken and Vegetable wrap platter
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-salads">
               <img
-                src="assets/img/menu/nut-salad.jpg"
+                src="Restaurant/salmonSalad.jpg"
                 class="menu-img"
                 alt=""
+                style="transform: scale(1.3); cursor: pointer;"
               />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Nut Salad</a><span>25.0 dt</span>
+                  <a href="#">Avocado and Salmon</a><span>Salad</span>
                 </div>
                 <div class="menu-ingredients">
-                  Lettuce, Arugula, Cherry Tomatoes, Grilled Chicken, Goat
-                  Cheese, Nut sauce, Balsamic.
+                  Lettuce, Avocado, Fresh Salmon, Rice, Balsamic.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/fishRice.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Wrapped Rice</a><span>Specialty</span>
+                </div>
+                <div class="menu-ingredients">
+                  Wrapped Rice, Avocado, Fried Fish
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-salads">
               <img
-                src="assets/img/menu/burrata-salad.jpg"
+                src="Restaurant/greekSushi.jpg"
                 class="menu-img"
                 alt=""
+                style="transform: scale(1.3); cursor: pointer;"
               />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Burrata Salad</a><span>24.0 dt</span>
+                  <a href="#">Fresh salmon and cucumber</a><span>Salad</span>
                 </div>
                 <div class="menu-ingredients">
-                  Burrata, Arugula, Cherry Tomatoes, Balsamic Vinegar, Virgin
-                  Olive Oil, Dried Tomatoes
+                  Fresh fish slices, avocado, diced cucumber
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/ribsPlatter.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">BBQ Ribs</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Soft and Tender BBQ Ribs platter
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/sushiBar.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Sushi and Desert</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Freshly prepared sushi and desert bar
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-specialty">
-              <img src="assets/img/menu/juicy.jpg" class="menu-img" alt="" />
+              <img src="Restaurant/fishSoup.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Juicy</a><span>28.0 dt</span>
+                  <a href="#">Fried Fish</a><span>Specialty</span>
                 </div>
                 <div class="menu-ingredients">
-                  Minced Meat, Fresh Tomato Sauce, Fresh Paris Marvel, Gratine
-                  With Grilled Cheese.
+                  Fried Fish, Soup, Side of rice
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6 menu-item filter-specialty">
-              <img src="assets/img/menu/juicy.jpg" class="menu-img" alt="" />
+              <img src="Restaurant/friedSushi.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
               <div class="menu-item-details">
                 <div class="menu-content">
-                  <a href="#">Juicy</a><span>28.0 dt</span>
+                  <a href="#">Salmon and Balsamic</a><span>Sushi</span>
                 </div>
                 <div class="menu-ingredients">
-                  Minced Meat, Fresh Tomato Sauce, Fresh Paris Marvel, Gratine
-                  With Grilled Cheese.
+                  Freshly glazed salmon sushi mix
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/saladBar.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Salad Bar</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Hand-picked salad ingredient bar
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="col-lg-6 menu-item filter-salads">
+              <img
+                src="Restaurant/saladPlatter.jpg"
+                class="menu-img"
+                alt=""
+                style="transform: scale(1.3); cursor: pointer;"
+              />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Carrot And Salmon</a><span>Salad</span>
+                </div>
+                <div class="menu-ingredients">
+                  Lettuce, Fresh Salmon, Carrots, Diced cucumbers, Avocado,
+                  Sliced Purple Cabbage, Balsamic Vinegar
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/saladSushi.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Sushi and Salad Mix</a><span>Specialty</span>
+                </div>
+                <div class="menu-ingredients">
+                  Fresh salmon, Diced cucumber, sushi rolls.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/sushiPlatter.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Platter</a><span>Sushi</span>
+                </div>
+                <div class="menu-ingredients">
+                  Balsamic glazed sushi platter.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/sushiPlatterMix.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Platter Mix</a><span>Sushi</span>
+                </div>
+                <div class="menu-ingredients">
+                  Fresh Salmon, Rice, Diced cucumber.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-catering">
+              <img src="Catering/saladBar.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Biltong and Chips</a><span>Catering</span>
+                </div>
+                <div class="menu-ingredients">
+                  Biltong, Chips, mixed nuts, cherry tomatoes, fresh parsley
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="Restaurant/sushiPlatter1.jpg" class="menu-img" alt="" style="transform: scale(1.3); cursor: pointer;" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a href="#">Platter</a><span>Sushi</span>
+                </div>
+                <div class="menu-ingredients">
+                  Rolled salmon, Sliced salmon, Rice, Pulled prawns, Diced cucumbers
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- End Menu Section -->
-
-      <!-- ======= Events Section ======= -->
-      <!-- <section id="events" class="events">
-        <div class="swiper-container max-width-container">
-          <div class="section-title">
-            <h2>Organize Your <span>Events</span> in our Restaurant</h2>
-          </div>
-
-          <div class="events-slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="row event-item">
-                  <div class="col-lg-6 d-lg-flex align-items-center">
-                    <img
-                      src="assets/img/events/event-birthday.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Birthday Celebrations</h3>
-                    <div class="price">
-                      <p><span>250 dt</span></p>
-                    </div>
-                    <p class="fst-italic">
-                      Hosting a Birthday Party at our restaurant is a great way
-                      to bring a large group together for the ultimate
-                      celebration. You can meet with our event manager to plan
-                      all the celebration details:
-                    </p>
-                    <ul>
-                      <li><i class="bi bi-check-circle"></i> Food.</li>
-                      <li><i class="bi bi-check-circle"></i> Drinks.</li>
-                      <li>
-                        <i class="bi bi-check-circle"></i> Decorations and party
-                        layout.
-                      </li>
-                    </ul>
-                    <p>
-                      We will make sure you have a fantastic birthday party.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="row event-item">
-                  <div class="col-lg-6 d-lg-flex align-items-center">
-                    <img
-                      src="assets/img/events/event-holiday.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Holiday Parties & More</h3>
-                    <div class="price">
-                      <p><span>250 dt</span></p>
-                    </div>
-                    <p class="fst-italic">
-                      The holidays are a hectic time of year. With all the
-                      responsibilities that come along with hosting, the
-                      holidays can come and go without much fun at all. Spend
-                      more time with your family and less time in the kitchen by
-                      having your holiday celebration at Pasta Cosi. There are
-                      many more types of events that we can host at Pasta Cosi
-                      like:
-                    </p>
-                    <ul>
-                      <li>
-                        <i class="bi bi-check-circle"></i> Graduation parties.
-                      </li>
-                      <li>
-                        <i class="bi bi-check-circle"></i> Engagement parties.
-                      </li>
-                      <li>
-                        <i class="bi bi-check-circle"></i> Retirement parties.
-                      </li>
-                    </ul>
-                    <p>We will make sure you have a fantastic event party.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="row event-item">
-                  <div class="col-lg-6 d-lg-flex align-items-center">
-                    <img
-                      src="assets/img/events/event-baby.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Baby & Bridal Showers</h3>
-                    <div class="price">
-                      <p><span>200dt</span></p>
-                    </div>
-                    <p class="fst-italic">
-                      Both of these events are the perfect way to celebrate your
-                      amazing news! We can create a stress-free way to celebrate
-                      your special occasion for an intimate gathering with
-                      friends and family! We will take care of:
-                    </p>
-                    <ul>
-                      <li><i class="bi bi-check-circle"></i> Set up.</li>
-                      <li><i class="bi bi-check-circle"></i> Food.</li>
-                      <li><i class="bi bi-check-circle"></i> Drinks.</li>
-                    </ul>
-                    <p>
-                      while you focus on the invites, party favors, and
-                      decorations and other details for your event.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Events Section -->
 
       <!-- ======= Book A Table Section ======= -->
       <!-- <section id="book-a-table" class="book-a-table">
@@ -811,138 +980,27 @@
       </section> -->
       <!-- End Gallery Section -->
 
-      <!-- ======= Testimonials Section ======= -->
-      <!-- <section id="testimonials" class="testimonials">
+      <section id="ourChef" class="ourChef">
         <div class="container position-relative max-width-container">
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <!-- class="testimonials-slider swiper"
+          data-aos="fade-up"
+          data-aos-delay="900" -->
+          <div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="testimonial-item">
+                <div class="ourChef-item">
                   <img
-                    src="assets/img/testimonials/bachir.jpg"
-                    class="testimonial-img"
+                    src="Catering/ourChef.jpg"
+                    class="ourChef-img"
                     alt=""
+                    style="width: 200px; height: auto; cursor: pointer;"
                   />
-                  <h3>Bechir B</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
+                  <h3>Dumisani Lunga</h3>
+                  <h4>Skinny Chefs C.E.O &amp; Founder</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    The best pasta in Tunis. Very good dishes, greedy portions,
-                    appetizing presentations, to be repeated and I strongly
-                    advise to all lovers of good pasta.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/sywar.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sywar Jmayel</h3>
-                  <h4>Designer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Freshness, variety, quality and impeccable service I will
-                    certainly come back.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/rahma.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Rahma Rh</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    For pasta lovers 🍝 Pasta Cosi Is the best address a fast
-                    service, nice setting and the dishes are too too good .👌🏻 I
-                    highly recommend it.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/oussama.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Oussama Hamed</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    A real treat at Pasta Cosi ❤️ This dish is called "Hasta la
-                    Vistas Baby" 😅 and I chose tagliatelle as the pasta ❤️
-                    Price: 25DT Rating: 10/10.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/mehdi.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Mehdi Jelassi</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    For years the quality is excellent this place does not
-                    change but the menu is constantly enriched.
+                    With more than 20 years of restaurant experience as a Chef, Waiter, Sushi Maker and Events Manager,
+                    I only thrive for the best quality of delicious Sushi dishes, Chinese Food and Asian cuisine.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -951,8 +1009,226 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
+      </section>
+      
+      <div style="background: linear-gradient(to bottom, #008000,#FFB03B); padding-top: 8px; ">
+        <h3 style="align-items: center; justify-content: center; display: flex;">
+          Meet &nbsp; <strong style="color: #fff;">OUR TEAM</strong>
+        </h3>
+        <br>
+      </div>
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container position-relative max-width-container">
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="ourChef">
+                <div class="testimonial-item">
+                  <img
+                    src="Catering/ourChef2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Dumisani Lunga</h3>
+                  <h4>Esteemed Chef</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="Catering/seniorWaiter2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Senior Waiter</h3>
+                  <h4>Waitress</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="Catering/seniorWaiter3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Senior Waiter</h3>
+                  <h4>Waitress</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="Catering/seniorWaiter4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Senior Waiter</h3>
+                  <h4>Waitress</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="Catering/seniorWaiter5.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Senior Waiter</h3>
+                  <h4>Waitress</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="Catering/dumiCatering2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Senior Chef</h3>
+                  <h4>Chef</h4>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section-->
+
+      <!-- ======= Events Section ======= -->
+      <!-- <section id="catering" class="events">
+        <div class="swiper-container max-width-container">
+          <div class="section-title">
+            <h2>Organize Your <span>Events</span> in our Restaurant</h2>
+          </div>
+
+          <div class="events-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6 d-lg-flex align-items-center">
+                    <img
+                      src="assets/img/events/event-birthday.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Birthday Celebrations</h3>
+                    <div class="price">
+                      <p><span>250 dt</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Hosting a Birthday Party at our restaurant is a great way
+                      to bring a large group together for the ultimate
+                      celebration. You can meet with our event manager to plan
+                      all the celebration details:
+                    </p>
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> Food.</li>
+                      <li><i class="bi bi-check-circle"></i> Drinks.</li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Decorations and party
+                        layout.
+                      </li>
+                    </ul>
+                    <p>
+                      We will make sure you have a fantastic birthday party.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6 d-lg-flex align-items-center">
+                    <img
+                      src="assets/img/events/event-holiday.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Holiday Parties & More</h3>
+                    <div class="price">
+                      <p><span>250 dt</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      The holidays are a hectic time of year. With all the
+                      responsibilities that come along with hosting, the
+                      holidays can come and go without much fun at all. Spend
+                      more time with your family and less time in the kitchen by
+                      having your holiday celebration at Pasta Cosi. There are
+                      many more types of events that we can host at Pasta Cosi
+                      like:
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Graduation parties.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Engagement parties.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Retirement parties.
+                      </li>
+                    </ul>
+                    <p>We will make sure you have a fantastic event party.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6 d-lg-flex align-items-center">
+                    <img
+                      src="assets/img/events/event-baby.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Baby & Bridal Showers</h3>
+                    <div class="price">
+                      <p><span>200dt</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Both of these events are the perfect way to celebrate your
+                      amazing news! We can create a stress-free way to celebrate
+                      your special occasion for an intimate gathering with
+                      friends and family! We will take care of:
+                    </p>
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> Set up.</li>
+                      <li><i class="bi bi-check-circle"></i> Food.</li>
+                      <li><i class="bi bi-check-circle"></i> Drinks.</li>
+                    </ul>
+                    <p>
+                      while you focus on the invites, party favors, and
+                      decorations and other details for your event.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section> -->
-      <!-- End Testimonials Section -->
+      <!-- End Events Section -->
+
+        
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
@@ -966,10 +1242,11 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.506534827304!2d28.156964700000003!3d-26.147628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95124b62a12945%3A0x9f4cd9dcfde71324!2s24%2010th%20Ave%2C%20Edenvale%2C%201609!5e0!3m2!1sen!2sza!4v1697452109312!5m2!1sen!2sza"
               width="100%"
               height="350"
-              style="border: 0"
+              style="border: 0; border-radius: 5px;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              st
             ></iframe>
           </div>
         </div>
