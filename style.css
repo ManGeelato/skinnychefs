@@ -947,7 +947,7 @@ background: white;
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(./assets/img/events/events-bg.jpg) no-repeat;
+  background: url(./Catering/catering.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1168,6 +1168,7 @@ background: white;
 --------------------------------------------------------------*/
 .gallery {
   padding-bottom: 80px;
+  background: linear-gradient(to bottom, #008000,#FFB03B);  
 }
 
 .gallery .gallery-item {
@@ -1557,6 +1558,17 @@ background: white;
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* .cateringImage{
+  width: 100%;
+  height: auto;
+} */
+
+.cateringImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*--------------------------------------------------------------
