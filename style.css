@@ -856,6 +856,30 @@ background: white;
   border-radius: 50px;
 }
 
+/* .menu {
+  padding: 80px 0;
+  background: url("./Restaurant/yellowSushi.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+} */
+
+.btn-download {
+  display: inline-block;
+  background-color: #ff6347; /* Tomato color */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #e5533b; /* Slightly darker shade */
+}
+
+
 .menu #menu-flters li {
   cursor: pointer;
   display: inline-block;
